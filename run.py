@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-import keep_replit_alive
+
 
 import logging
 from colorama import Fore
@@ -82,7 +82,7 @@ twitch_miner = TwitchChannelPointsMiner(
 
 twitch_miner.analytics(host="0.0.0.0", port=8080, refresh=5, days_ago=7)   # Start the Analytics web-server
 
-keep_replit_alive.keep_alive()
+
 
 twitch_miner.mine(
     [
